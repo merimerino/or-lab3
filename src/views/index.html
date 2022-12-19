@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Licensed Horses Cro</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Baza podataka licenciranih konja u Republici Hrvatskoj, po Hrvatskom konjičkom savezu.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Marija Danek">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+  </head>
+  <body>
+  
+    <div class="margins">
+    <h1 id="baza-podataka-licensed-horses-cro">Baza podataka - Licensed horses CRO</h1>
+    <h2 id="verzija-1-0">Verzija 1.0</h2>
+    <h3 id="autor-marija-danek">Autor: Marija Danek</h3>
+    <h4 id="_jezik-hrvatski_"><em>Jezik: Hrvatski</em></h4>
+    <h4 id="_licenca-mit-kod-se-mo-e-slobodno-koristiti_"><em>Licenca: MIT - kod se može slobodno koristiti</em></h4>
+    <p>Baza podataka licenciranih konja u Republici Hrvatskoj, po Hrvatskom konjičkom savezu.</p>
+    
+    <a id="btn" href="/datatable" title="Table">Otvori tablicu</a>
+    <h3>Preuzmi cijeli skup podataka kao:</h3>
+    <a id="btn" href="data/horses.json" download>JSON</a>
+    <a id="btn" href="data/horses.csv" download>CSV</a>
+    
+    <h4 id="tablica-atributa-">Tablica atributa:</h4>
+    <table class="meta-table">
+      <thead>
+        <tr>
+          <th>Naziv</th>
+          <th>Tip</th>
+          <th>Opis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>id_horse</td>
+          <td>integer</td>
+          <td>ID konja</td>
+        </tr>
+        <tr>
+          <td>horse_name</td>
+          <td>string</td>
+          <td>Ime konja</td>
+        </tr>
+        <tr>
+          <td>father</td>
+          <td>string</td>
+          <td>Otac konja</td>
+        </tr>
+        <tr>
+          <td>mothers_father</td>
+          <td>string</td>
+          <td>Otac majke konja</td>
+        </tr>
+        <tr>
+          <td>year_of_birth</td>
+          <td>integer</td>
+          <td>Godina rođenja</td>
+        </tr>
+        <tr>
+          <td>country_of_birth</td>
+          <td>string</td>
+          <td>Zemlja rođenja</td>
+        </tr>
+        <tr>
+          <td>gender</td>
+          <td>string</td>
+          <td>Spol</td>
+        </tr>
+        <tr>
+          <td>breed</td>
+          <td>string</td>
+          <td>Pasmina</td>
+        </tr>
+        <tr>
+          <td>tournament</td>
+          <td>boolean</td>
+          <td>Bio na natjecanju? <em>True</em> ako da, <em>false</em> ako ne</td>
+        </tr>
+        <tr>
+          <td>owner_name</td>
+          <td>string</td>
+          <td>Ime vlasnika</td>
+        </tr>
+        <tr>
+          <td>owner_surname</td>
+          <td>string</td>
+          <td>Prezime vlasnika</td>
+        </tr>
+        <tr>
+          <td>id_owner</td>
+          <td>string</td>
+          <td>ID vlasnika</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.17.1/dist/extensions/export/bootstrap-table-export.min.js"></script>
